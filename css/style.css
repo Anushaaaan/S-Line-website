@@ -514,3 +514,19 @@ form#contact-form button:hover {
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .nav-links.active {
+    right: auto;
+  }
+}
+
