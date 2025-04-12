@@ -21,6 +21,7 @@ body {
   border-bottom: 1px solid #eee;
   padding: 10px 0;
   font-size: 14px;
+  display: block;
 }
 
 .topbar-container {
@@ -602,6 +603,10 @@ form#contact-form button:hover {
 
   .nav-links.active {
     right: auto;
+  }
+
+  .topbar {
+    display: none;
   }
 }
 
