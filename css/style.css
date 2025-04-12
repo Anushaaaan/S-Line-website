@@ -127,6 +127,46 @@ nav .logo {
   color: #fff;
 }
 
+/* Dropdown container */
+.nav-links .dropdown {
+  position: relative;
+}
+
+/* Dropdown menu base style */
+.nav-links .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 450px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  z-index: 999;
+  padding: 0;
+  list-style: none;
+}
+
+/* Menu items */
+.nav-links .dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links .dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown when .open is added to .dropdown */
+.nav-links .dropdown.open .dropdown-menu {
+  max-height: 680px;
+}
+
+
 /* Hero Slider */
 .hero-slider {
   position: relative;

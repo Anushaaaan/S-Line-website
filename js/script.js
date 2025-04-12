@@ -47,4 +47,49 @@ setInterval(nextSlide, 6000);
 //   navLinks.classList.toggle('active');
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.querySelector('.dropdown');
+
+  let dropdownTimeout;
+
+  function showDropdown() {
+    clearTimeout(dropdownTimeout);
+    dropdown.classList.add('open');
+  }
+
+  function hideDropdown() {
+    dropdownTimeout = setTimeout(() => {
+      dropdown.classList.remove('open');
+    }, 200);
+  }
+
+  // Hover (desktop only)
+  dropdown.addEventListener('mouseenter', () => {
+    if (window.innerWidth > 768) showDropdown(); // Only on desktop
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    if (window.innerWidth > 768) hideDropdown(); // Only on desktop
+  });
+
+  // Click toggle (for mobile and desktop)
+  dropdown.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent triggering body click
+    dropdown.classList.toggle('open');
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+
+  // Optional: Close on scroll (mobile UX enhancement)
+  window.addEventListener('scroll', () => {
+    dropdown.classList.remove('open');
+  });
+});
+
+
 
