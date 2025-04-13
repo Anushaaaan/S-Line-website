@@ -7,6 +7,7 @@
   <title>Product Page</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/product.css" />
+  <link rel="stylesheet" href="/css/product-details.css" />
 </head>
 <body>
 
@@ -77,52 +78,31 @@
     
   </header>
 
-  <main class="product-page-container">
-    <aside class="product-sidebar">
-      <h3>Product Categories</h3>
-      <ul class="product-categories">
-        <li><a href="product-digital-clamp-meter.html">Digital Clamp Meter</a></li>
-        <li><a href="product-digital-multimeter.html">Digital Multi Meter</a></li>
-        <li><a href="product-temperature.html">Temperature</a></li>
-        <li><a href="product-insulation-earth.html">Insulation & Earth Tester</a></li>
-        <li><a href="product-power-supply.html">Power Supply</a></li>
-        <li><a href="product-battery-tester.html">Battery Tester</a></li>
-        <li><a href="product-solar.html">Solar Products</a></li>
-        <li><a href="product-oscilloscope.html">Digital Oscilloscope</a></li>
-        <li><a href="product-light-meter.html">Light Meter</a></li>
-        <li><a href="product-anemometer.html">Digital Anemometer</a></li>
-        <li><a href="product-lcr-meter.html">Digital LCR Meter</a></li>
-        <li><a href="product-wire-tracker.html">Wire Tracker</a></li>
-        <li><a href="product-tachometer.html">Digital Tachometer</a></li>
-        <li><a href="product-measuring.html">Measuring Instruments</a></li>
-      </ul>
-    </aside>
-
-    <section class="product-main">
-      <div class="product-description">
-        <h2>Digital Clamp Meter</h2>
-        <p>
-          Digital clamp meters are essential tools for measuring current, voltage, and resistance safely.
-          They're widely used in electrical installations and maintenance work, providing hands-free testing.
-        </p>
-      </div>
-
-      <div class="product-listing">
-        <div class="product-item">
-          <img src="/Assets/productImages/product1.jpg" alt="UT118C Pen-Type Meter">
-          <div class="product-info">
-            <h3>UT118C Pen-Type Meter</h3>
-            <div class="product-buttons">
-              <a href="/product/product-details/product-detail.html" class="btn-learn">Learn More</a>
-              <!-- <a href="#" class="btn-compare">Compare Models</a> -->
-            </div>
-          </div>
+  <section class="product-detail-section">
+    <div class="product-container">
+      <div class="product-images">
+        <img src="/Assets/productImages/product1.jpg" alt="UT118C Pen-Type Meter" class="main-image" id="mainImage">
+        <div class="thumbnail-container">
+          <img src="/Assets/productImages/product1.jpg" class="thumb active" alt="Thumbnail 1">
+          <img src="/images/products/pen-type-2.png" class="thumb" alt="Thumbnail 2">
+          <img src="/images/products/pen-type-3.png" class="thumb" alt="Thumbnail 3">
+          <img src="/images/products/pen-type-4.png" class="thumb" alt="Thumbnail 4">
+          <img src="/images/products/pen-type-5.png" class="thumb" alt="Thumbnail 5">
         </div>
-
-        <!-- Repeat this product-item for more products -->
       </div>
-    </section>
-  </main>
+      <div class="product-details">
+        <h1>UT118C Pen-Type Meter</h1>
+        <p>
+          The UT118C Pen-type meter is a lightweight and durable device that boasts True RMS measurement capability, allowing for accurate readings. 
+          With the ability to measure voltage up to AC/DC 600, a wide resistance and capacitance range, and gold-plated special-tip test leads for 
+          versatility and safe operation (CAT III 600V & CAT IV 300V), it is an excellent and cost-effective choice for residential appliance repair 
+          and DIY enthusiasts.
+        </p>
+        <a href="/index.html#contact" class="contact-button">Contact <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  
 
   <footer class="footer">
     <div class="footer-top">
@@ -181,5 +161,6 @@
 
   <script src="/js/script.js"></script>
   <script src="/js/product.js"></script>
+  <script src="/js/product-details.js"></script>
 </body>
 </html>

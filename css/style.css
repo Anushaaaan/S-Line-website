@@ -3,6 +3,10 @@
   --dark-blue: rgb(3, 36, 71);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
