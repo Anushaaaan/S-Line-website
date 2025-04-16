@@ -1,8 +1,11 @@
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thanks for contacting us! We will get back to you soon.');
-  this.reset();
-});
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thanks for contacting us! We will get back to you soon.');
+    this.reset();
+  });
+}
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -39,13 +42,7 @@ function prevSlide() {
 
 setInterval(nextSlide, 6000);
 
-// const hamburger = document.querySelector('.hamburger');
-// const navLinks = document.querySelector('.nav-links');
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('active');
-//   navLinks.classList.toggle('active');
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector('.dropdown');
