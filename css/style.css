@@ -319,6 +319,71 @@ nav .logo {
   line-height: 1.6;
 }
 
+/*Product section*/
+.product-categories-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.product-categories-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Specific desktop styling for last row alignment */
+@media (min-width: 1024px) {
+  .product-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Last two cards positioned to column 2 and 3 */
+  .product-card:nth-child(13) {
+    grid-column: 2;
+  }
+
+  .product-card:nth-child(14) {
+    grid-column: 3;
+  }
+}
+
 
 
 /* about us*/
@@ -614,3 +679,30 @@ form#contact-form button:hover {
   }
 }
 
+
+/*contact form side bar*/
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e9f1f7; /* Soft background to stand out */
+  padding: 25px 30px;
+  border-radius: 8px;
+  text-align: left; /* Ensures all text is left aligned */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Optional: adds a soft shadow */
+}
+
+.contact-info .info-block {
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  margin-bottom: 6px;
+  color: #003366;
+  font-size: 1.1rem;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
