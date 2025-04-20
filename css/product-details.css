@@ -89,3 +89,99 @@
     }
   }
   
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .spec-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  .spec-table th, .spec-table td {
+    padding: 14px 16px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .spec-table thead th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #d9534f; /* subtle red underline */
+  }
+  
+  .spec-table td:first-child, 
+  .spec-table th:first-child {
+    text-align: left;
+  }
+  
+  .spec-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+  }
+  
+  .spec-table th {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .spec-table table, 
+    .spec-table thead, 
+    .spec-table tbody, 
+    .spec-table th, 
+    .spec-table td, 
+    .spec-table tr {
+      display: block;
+    }
+  
+    .spec-table thead {
+      display: none;
+    }
+  
+    .spec-table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+  
+    .spec-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+  }
+
+  .features, .general-info {
+    margin-top: 50px;
+    text-align: left;
+  }
+  
+  .features h3, .general-info h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .features ul, .general-info ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .features li, .general-info li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
